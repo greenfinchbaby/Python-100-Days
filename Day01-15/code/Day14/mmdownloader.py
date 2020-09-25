@@ -11,6 +11,7 @@ class DownloadHanlder(Thread):
         self.url = url
 
     def run(self):
+        # rfind('/')为之前数据，需要修改如下
         filename = self.url[self.url.rfind('\\') + 1:]
         resp = requests.get(self.url)
         with open('e:\\PythonDownloads\\' + filename, 'wb') as f:
