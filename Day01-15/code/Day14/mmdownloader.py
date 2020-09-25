@@ -19,7 +19,7 @@ class DownloadHanlder(Thread):
 
 
 def main():
-    # 通过requests模块的get函数获取网络资源
+    # 通过requests模块的get函数获取网络资源...
     resp = requests.get(
         'http://api.tianapi.com/usermake/index?key=6f9dd432e7bf2ab15dde5f0b4dcdc9f9&num=10&urlid=133')
     # 将服务器返回的JSON格式的数据解析为字典
